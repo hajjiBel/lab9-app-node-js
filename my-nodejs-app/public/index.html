@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Node.js App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { margin-top: 0; }
+        .status {
+            background: rgba(0, 255, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .endpoint {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 3px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Node.js Application</h1>
+        <p>Bienvenue dans votre application Node.js déployée via Azure Pipelines!</p>
+
+        <div class="status">
+            <strong>✅ Application démarrée avec succès</strong>
+        </div>
+
+        <h2>📊 Endpoints disponibles</h2>
+
+        <div class="endpoint">
+            <strong>Health Check:</strong><br>
+            <code>GET /health</code> - Vérifier l'état de l'application
+        </div>
+
+        <div class="endpoint">
+            <strong>Readiness Probe:</strong><br>
+            <code>GET /health/ready</code> - Vérifier la disponibilité
+        </div>
+
+        <div class="endpoint">
+            <strong>API Version:</strong><br>
+            <code>GET /api/version</code> - Récupérer la version
+        </div>
+
+        <div class="endpoint">
+            <strong>Echo Endpoint:</strong><br>
+            <code>POST /api/echo</code> - Tester avec des données JSON
+        </div>
+
+        <h2>🔧 Documentation</h2>
+        <p>Consultez le fichier <code>README.md</code> pour plus de détails.</p>
+    </div>
+</body>
+</html>
